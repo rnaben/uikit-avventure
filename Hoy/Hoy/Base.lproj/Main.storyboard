@@ -12,7 +12,7 @@
         <!--Shot List View Controller-->
         <scene sceneID="EeR-cN-3VD">
             <objects>
-                <collectionViewController id="OyY-de-h4u" customClass="ShotListViewController" customModule="DayKiller" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="OyY-de-h4u" customClass="ShotListViewController" customModule="Hoy" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="W7v-O3-vYG">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

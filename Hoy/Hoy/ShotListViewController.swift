@@ -1,6 +1,6 @@
 //
 //  ShotListViewController.swift
-//  DayKiller
+//  Hoy
 //
 //  Created by Павел Оливейра on 04/10/22.
 //
@@ -10,7 +10,7 @@ import UIKit
 class ShotListViewController: UICollectionViewController {
     typealias DataSource = UICollectionViewDiffableDataSource<Int, String>
     
-    var dataSource = DataSource!
+//    var dataSource = DataSource!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,16 +18,16 @@ class ShotListViewController: UICollectionViewController {
         let listLayout = listLayout()
         collectionView.collectionViewLayout = listLayout
         
-        let cellResgistration = UICollectionView.CellRegistration { (cell: UICollectionViewListCell, indexPath: IndexPath, itemIdentifier: String) in
-            let shot = Shot.sampleData[indexPath.item]
-            var contentConfiguration = cell.defaultContentConfiguration()
-            contentConfiguration.text = shot.title
-            cell.contentConfiguration = contentConfiguration
-        }
+//        let cellResgistration = UICollectionView.CellRegistration { (cell: UICollectionViewListCell, indexPath: IndexPath, itemIdentifier: String) in
+//            let shot = Shot.sampleData[indexPath.item]
+//            var contentConfiguration = cell.defaultContentConfiguration()
+//            contentConfiguration.text = shot.title
+//            cell.contentConfiguration = contentConfiguration
+//        }
         
-        dataSource = DataSource(collectionView: collectionView, cellProvider: { collectionView, indexPath, itemIdentifier in
-            return collectionView.dequeueConfiguredReusableCell(using: cellResgistration, for: indexPath, item: itemIdentifier)
-        })
+//        dataSource = DataSource(collectionView: collectionView, cellProvider: { collectionView, indexPath, itemIdentifier in
+//            return collectionView.dequeueConfiguredReusableCell(using: cellResgistration, for: indexPath, item: itemIdentifier)
+//        })
     }
 
     private func listLayout() -> UICollectionViewCompositionalLayout {

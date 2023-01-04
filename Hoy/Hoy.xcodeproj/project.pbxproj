@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1C205CC295CE7020097CA44 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C205CB295CE7020097CA44 /* Reminder.swift */; };
 		BF7A457228EC9CF5008A969F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7A457128EC9CF5008A969F /* AppDelegate.swift */; };
 		BF7A457428EC9CF5008A969F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7A457328EC9CF5008A969F /* SceneDelegate.swift */; };
-		BF7A457628EC9CF5008A969F /* ShotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7A457528EC9CF5008A969F /* ShotListViewController.swift */; };
+		BF7A457628EC9CF5008A969F /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7A457528EC9CF5008A969F /* ReminderListViewController.swift */; };
 		BF7A457928EC9CF5008A969F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7A457728EC9CF5008A969F /* Main.storyboard */; };
 		BF7A457B28EC9CF9008A969F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7A457A28EC9CF9008A969F /* Assets.xcassets */; };
 		BF7A457E28EC9CF9008A969F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7A457C28EC9CF9008A969F /* LaunchScreen.storyboard */; };
-		BF7A458728ECBB25008A969F /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7A458628ECBB25008A969F /* Shot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BF7A456E28EC9CF5008A969F /* DayKiller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayKiller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C205CB295CE7020097CA44 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		BF7A456E28EC9CF5008A969F /* Hoy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hoy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7A457128EC9CF5008A969F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF7A457328EC9CF5008A969F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF7A457528EC9CF5008A969F /* ShotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotListViewController.swift; sourceTree = "<group>"; };
+		BF7A457528EC9CF5008A969F /* ReminderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListViewController.swift; sourceTree = "<group>"; };
 		BF7A457828EC9CF5008A969F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF7A457A28EC9CF9008A969F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF7A457D28EC9CF9008A969F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF7A457F28EC9CF9008A969F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF7A458628ECBB25008A969F /* Shot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,10 +39,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1C205CA295CE6930097CA44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1C205CB295CE7020097CA44 /* Reminder.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		BF7A456528EC9CF5008A969F = {
 			isa = PBXGroup;
 			children = (
-				BF7A457028EC9CF5008A969F /* DayKiller */,
+				BF7A457028EC9CF5008A969F /* Hoy */,
 				BF7A456F28EC9CF5008A969F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,40 +58,32 @@
 		BF7A456F28EC9CF5008A969F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BF7A456E28EC9CF5008A969F /* DayKiller.app */,
+				BF7A456E28EC9CF5008A969F /* Hoy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BF7A457028EC9CF5008A969F /* DayKiller */ = {
+		BF7A457028EC9CF5008A969F /* Hoy */ = {
 			isa = PBXGroup;
 			children = (
-				BF7A458528ECBA40008A969F /* Models */,
+				B1C205CA295CE6930097CA44 /* Models */,
 				BF7A457128EC9CF5008A969F /* AppDelegate.swift */,
 				BF7A457328EC9CF5008A969F /* SceneDelegate.swift */,
-				BF7A457528EC9CF5008A969F /* ShotListViewController.swift */,
+				BF7A457528EC9CF5008A969F /* ReminderListViewController.swift */,
 				BF7A457728EC9CF5008A969F /* Main.storyboard */,
 				BF7A457A28EC9CF9008A969F /* Assets.xcassets */,
 				BF7A457C28EC9CF9008A969F /* LaunchScreen.storyboard */,
 				BF7A457F28EC9CF9008A969F /* Info.plist */,
 			);
-			path = DayKiller;
-			sourceTree = "<group>";
-		};
-		BF7A458528ECBA40008A969F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				BF7A458628ECBB25008A969F /* Shot.swift */,
-			);
-			path = Models;
+			path = Hoy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BF7A456D28EC9CF5008A969F /* DayKiller */ = {
+		BF7A456D28EC9CF5008A969F /* Hoy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BF7A458228EC9CF9008A969F /* Build configuration list for PBXNativeTarget "DayKiller" */;
+			buildConfigurationList = BF7A458228EC9CF9008A969F /* Build configuration list for PBXNativeTarget "Hoy" */;
 			buildPhases = (
 				BF7A456A28EC9CF5008A969F /* Sources */,
 				BF7A456B28EC9CF5008A969F /* Frameworks */,
@@ -93,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = DayKiller;
+			name = Hoy;
 			productName = DayKiller;
-			productReference = BF7A456E28EC9CF5008A969F /* DayKiller.app */;
+			productReference = BF7A456E28EC9CF5008A969F /* Hoy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BF7A456928EC9CF5008A969F /* Build configuration list for PBXProject "DayKiller" */;
+			buildConfigurationList = BF7A456928EC9CF5008A969F /* Build configuration list for PBXProject "Hoy" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -126,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BF7A456D28EC9CF5008A969F /* DayKiller */,
+				BF7A456D28EC9CF5008A969F /* Hoy */,
 			);
 		};
 /* End PBXProject section */
@@ -149,10 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF7A457628EC9CF5008A969F /* ShotListViewController.swift in Sources */,
+				BF7A457628EC9CF5008A969F /* ReminderListViewController.swift in Sources */,
 				BF7A457228EC9CF5008A969F /* AppDelegate.swift in Sources */,
 				BF7A457428EC9CF5008A969F /* SceneDelegate.swift in Sources */,
-				BF7A458728ECBB25008A969F /* Shot.swift in Sources */,
+				B1C205CC295CE7020097CA44 /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +300,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DayKiller/Info.plist;
+				INFOPLIST_FILE = Hoy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Hoy;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -312,7 +313,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ya.pavel.DayKiller;
+				PRODUCT_BUNDLE_IDENTIFIER = r.naben.Hoy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -328,7 +329,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DayKiller/Info.plist;
+				INFOPLIST_FILE = Hoy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Hoy;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -340,7 +342,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ya.pavel.DayKiller;
+				PRODUCT_BUNDLE_IDENTIFIER = r.naben.Hoy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -351,7 +353,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BF7A456928EC9CF5008A969F /* Build configuration list for PBXProject "DayKiller" */ = {
+		BF7A456928EC9CF5008A969F /* Build configuration list for PBXProject "Hoy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BF7A458028EC9CF9008A969F /* Debug */,
@@ -360,7 +362,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BF7A458228EC9CF9008A969F /* Build configuration list for PBXNativeTarget "DayKiller" */ = {
+		BF7A458228EC9CF9008A969F /* Build configuration list for PBXNativeTarget "Hoy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BF7A458328EC9CF9008A969F /* Debug */,

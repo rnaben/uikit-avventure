@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  DayKiller
+//  Hoy
 //
-//  Created by Paulo Oliveira on 04/10/22.
+//  Created by Павел Оливейра on 04/10/22.
 //
 
 import UIKit
